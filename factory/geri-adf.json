@@ -1,0 +1,9 @@
+{
+	"name": "geri-adf",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e87caf82-7d03-41d7-b890-ec8bcaa5bef4",
+		"tenantId": "fa1f30d7-cdb6-4429-9f90-1a6d7d77c737"
+	}
+}

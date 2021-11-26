@@ -1,0 +1,7 @@
+{
+	"name": "GeriDellLaptopintegrationRuntime1",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Self-hosted integration runtime on my laptop"
+	}
+}

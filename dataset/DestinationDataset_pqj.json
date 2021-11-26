@@ -1,0 +1,21 @@
+{
+	"name": "DestinationDataset_pqj",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage_geri23",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "themes.parquet",
+				"fileSystem": "lego"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

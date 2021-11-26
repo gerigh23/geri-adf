@@ -1,0 +1,22 @@
+{
+	"name": "SoutEastEuropeintegrationRuntime1",
+	"properties": {
+		"type": "Managed",
+		"description": "Integration runtime based on SE region",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "AutoResolve",
+				"dataFlowProperties": {
+					"computeType": "General",
+					"coreCount": 8,
+					"timeToLive": 0,
+					"cleanup": false
+				}
+			}
+		},
+		"managedVirtualNetwork": {
+			"type": "ManagedVirtualNetworkReference",
+			"referenceName": "default"
+		}
+	}
+}
