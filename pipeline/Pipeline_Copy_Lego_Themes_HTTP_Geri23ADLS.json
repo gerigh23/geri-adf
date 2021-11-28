@@ -3,78 +3,49 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy_no2",
-				"type": "Copy",
+				"name": "Set variable1",
+				"type": "SetVariable",
 				"dependsOn": [],
-				"policy": {
-					"timeout": "7.00:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [
-					{
-						"name": "Source",
-						"value": "themes.csv.gz"
-					},
-					{
-						"name": "Destination",
-						"value": "lego//themes.parquet"
-					}
-				],
+				"userProperties": [],
 				"typeProperties": {
-					"source": {
-						"type": "DelimitedTextSource",
-						"storeSettings": {
-							"type": "HttpReadSettings",
-							"requestMethod": "GET"
-						},
-						"formatSettings": {
-							"type": "DelimitedTextReadSettings",
-							"skipLineCount": 6
-						}
-					},
-					"sink": {
-						"type": "ParquetSink",
-						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
-						},
-						"formatSettings": {
-							"type": "ParquetWriteSettings"
-						}
-					},
-					"enableStaging": false,
-					"enableSkipIncompatibleRow": true,
-					"logSettings": {
-						"enableCopyActivityLog": true,
-						"copyActivityLogSettings": {
-							"logLevel": "Warning",
-							"enableReliableLogging": false
-						},
-						"logLocationSettings": {
-							"linkedServiceName": {
-								"referenceName": "AzureDataLakeStorage_geri23",
-								"type": "LinkedServiceReference"
-							},
-							"path": "lego/errors/themes"
-						}
-					}
-				},
-				"inputs": [
+					"variableName": "Files",
+					"value": "colors"
+				}
+			},
+			{
+				"name": "If Condition1",
+				"type": "IfCondition",
+				"dependsOn": [
 					{
-						"referenceName": "HTTP_Lego_Themes",
-						"type": "DatasetReference"
+						"activity": "Set variable1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
 					}
 				],
-				"outputs": [
-					{
-						"referenceName": "DestinationDataset_Lego_Themes",
-						"type": "DatasetReference"
-					}
-				]
+				"userProperties": []
 			}
 		],
+		"parameters": {
+			"FileName": {
+				"type": "string"
+			},
+			"FileName1": {
+				"type": "String"
+			},
+			"LoadAllFiles": {
+				"type": "bool",
+				"defaultValue": false
+			}
+		},
+		"variables": {
+			"Files": {
+				"type": "String"
+			},
+			"ListOfFiles": {
+				"type": "Array"
+			}
+		},
 		"annotations": [],
 		"lastPublishTime": "2021-11-13T20:23:25Z"
 	},
