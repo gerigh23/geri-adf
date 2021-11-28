@@ -23,7 +23,13 @@
 						]
 					}
 				],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "@pipeline().parameters.LoadAllFiles",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"parameters": {
