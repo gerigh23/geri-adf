@@ -96,7 +96,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "SourceDataset_stb",
+						"referenceName": "Lego_Elements",
 						"type": "DatasetReference"
 					}
 				],
