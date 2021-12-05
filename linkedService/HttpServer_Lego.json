@@ -1,0 +1,13 @@
+{
+	"name": "HttpServer_Lego",
+	"properties": {
+		"description": "Linked services to download Rebricable files",
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://cdn.rebrickable.com/media/downloads/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
