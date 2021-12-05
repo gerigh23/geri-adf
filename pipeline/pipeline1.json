@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy_Data_Lego_Themes_HTTP_ADLS",
+				"name": "Copy_Data_Lego_Elements_HTTP_ADLS",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -55,34 +55,34 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "id",
+									"name": "element_id",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ThemeID",
+									"name": "ElementID",
 									"physicalType": "String"
 								}
 							},
 							{
 								"source": {
-									"name": "name",
+									"name": "part_num",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ThemeName",
+									"name": "PartNum",
 									"physicalType": "String"
 								}
 							},
 							{
 								"source": {
-									"name": "parent_id",
+									"name": "color_id",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ParentThemeID",
+									"name": "ColorID",
 									"physicalType": "String"
 								}
 							}
@@ -102,7 +102,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "SourceDataset_stb",
+						"referenceName": "Lego_Elements",
 						"type": "DatasetReference"
 					}
 				]
