@@ -1,0 +1,9 @@
+{
+	"name": "Pipeline_Lego_Themes_Renewal_HTTP_ADLS",
+	"properties": {
+		"folder": {
+			"name": "Test pipelines"
+		},
+		"annotations": []
+	}
+}
