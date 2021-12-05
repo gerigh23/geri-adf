@@ -102,7 +102,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Lego_Elements",
+						"referenceName": "SourceDataset_stb",
 						"type": "DatasetReference"
 					}
 				]
