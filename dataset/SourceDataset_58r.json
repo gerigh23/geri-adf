@@ -1,0 +1,42 @@
+{
+	"name": "SourceDataset_58r",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer_Lego",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "colors.csv.gz"
+			},
+			"columnDelimiter": ",",
+			"rowDelimiter": "\n",
+			"compressionCodec": "gzip",
+			"compressionLevel": "Optimal",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": ""
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "rgb",
+				"type": "String"
+			},
+			{
+				"name": "is_trans",
+				"type": "String"
+			}
+		]
+	}
+}
