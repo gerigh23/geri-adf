@@ -1,5 +1,5 @@
 {
-	"name": "DestinationDataset_stb",
+	"name": "ADLS_Lego_Themes",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage_geri23",
