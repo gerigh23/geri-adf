@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "Pipeline_Copy_Lego_Elements_HTTP_ADLS",
 	"properties": {
 		"activities": [
 			{
