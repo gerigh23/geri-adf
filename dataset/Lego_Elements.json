@@ -1,8 +1,8 @@
 {
-	"name": "SourceDataset_pqj",
+	"name": "Lego_Elements",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "HttpServer1",
+			"referenceName": "HttpServer_Lego",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,30 +10,15 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "themes.csv.gz"
+				"relativeUrl": "elements.csv.gz"
 			},
 			"columnDelimiter": ",",
-			"rowDelimiter": "\n",
 			"compressionCodec": "gzip",
 			"compressionLevel": "Optimal",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "18",
-				"type": "String"
-			},
-			{
-				"name": "Star Wars",
-				"type": "String"
-			},
-			{
-				"name": "1",
-				"type": "String"
-			}
-		]
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+		"schema": []
+	}
 }

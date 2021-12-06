@@ -1,5 +1,5 @@
 {
-	"name": "HTTP_Lego_Themes",
+	"name": "Lego_Themes",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "HttpServer_Lego",
@@ -19,19 +19,6 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "id",
-				"type": "String"
-			},
-			{
-				"name": "name",
-				"type": "String"
-			},
-			{
-				"name": "parent_id",
-				"type": "String"
-			}
-		]
+		"schema": []
 	}
 }

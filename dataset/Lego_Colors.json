@@ -1,8 +1,8 @@
 {
-	"name": "SourceDataset_Lego_Colors",
+	"name": "Lego_Colors",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "HttpServer1",
+			"referenceName": "HttpServer_Lego",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -13,31 +13,12 @@
 				"relativeUrl": "colors.csv.gz"
 			},
 			"columnDelimiter": ",",
-			"rowDelimiter": "\n",
 			"compressionCodec": "gzip",
 			"compressionLevel": "Optimal",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "3",
-				"type": "String"
-			},
-			{
-				"name": "Dark Turquoise",
-				"type": "String"
-			},
-			{
-				"name": "008F9B",
-				"type": "String"
-			},
-			{
-				"name": "f",
-				"type": "String"
-			}
-		]
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+		"schema": []
+	}
 }

@@ -1,7 +1,7 @@
 {
-	"name": "HttpServer1",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"name": "HttpServer_Lego",
 	"properties": {
+		"description": "Linked services to download Rebricable files",
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
